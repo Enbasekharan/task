@@ -94,7 +94,7 @@ window.onload = function () {
       cardnumber.value.length < 16 ||
       ! cardNumber.test(parseInt(cardnumber.value.replace(/\s/g, ""))) ||
       name.value.length < 1 ||
-      ! nameRegex.test(parseInt(cardnumber.value.replace(/\s/g, ""))) || 
+      ! nameRegex.test(name.value.replace(/\s/g, "")) || 
       parseInt(expirationdate.value.slice(0, 2)) > 12 ||
       parseInt(expirationdate.value.slice(0, 2)) === 0 ||
       parseInt(expirationdate.value.slice(3, 5)) < 21 ||
